@@ -24,6 +24,7 @@ class Activity(models.Model):
     user_id_2 = models.IntegerField()
     date_time = models.DateField()
 
+
 class Follower(models.Model):
     user_id = models.IntegerField()
     user_id_2 = models.IntegerField()
