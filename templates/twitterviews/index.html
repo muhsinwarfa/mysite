@@ -21,9 +21,11 @@
     <ul>
          {% for  tweet in tweets %}
             <li>{{ tweet.tweet_text }}</li>
+             <a href="{% url 'delete_tweet'  tweet.tweet_id %}"> delete this tweet</a>
         {%  endfor %}
     </ul>
 
+    <a href={% url 'create_tweet' %}>Create a tweet</a>
 <nav>
 
 </nav>

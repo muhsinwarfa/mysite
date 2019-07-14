@@ -1,0 +1,17 @@
+{% load bootstrap4 %}
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
+{% bootstrap_messages %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'twitter/style.css' %}">
+
+<body>
+
+    <h1>New Tweet</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit">Post Tweet </button>
+    </form>
+</body>
