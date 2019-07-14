@@ -6,8 +6,6 @@
 <link rel="stylesheet" type="text/css" href="{% static 'twitter/style.css' %}">
 
 <body>
-
-
 <nav class="navbar navbar-expand-lg menu-bar">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
@@ -18,16 +16,19 @@
       </li>
     </ul>
 </nav>
-    <ul>
+<br>
+<div class="navbar navbar-expand-lg">
+
+    <ul class="list-group listoftweets">
          {% for  tweet in tweets %}
-            <li>{{ tweet.tweet_text }}</li>
-             <a href="{% url 'delete_tweet'  tweet.tweet_id %}"> delete this tweet</a>
+            <li class="list-group-item tweetitem ">{{ tweet.tweet_text }}</li>
+{#             <a class="btn btn-primary btn-sm" href="{% url 'delete_tweet'  tweet.tweet_id %}" role="button"> delete this tweet</a>#}
+            <br>
         {%  endfor %}
+
     </ul>
 
-    <a href={% url 'create_tweet' %}>Create a tweet</a>
-<nav>
-
-</nav>
+{#    <a href={% url 'create_tweet' %}>Create a tweet</a>#}
+</div>
 </body>
 
