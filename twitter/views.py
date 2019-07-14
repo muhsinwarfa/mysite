@@ -2,12 +2,16 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import  authenticate, login
-
+from .models import Tweet,Activity,Follower
 
 # Create your views here.
 
-def index(request):
-    return render(request, 'twitterviews/index.html')
+# def index(request):
+#     return render(request, 'twitterviews/index.html')
+
+def list_tweets(request):
+    tweets= Tweet.objects.all()
+    return render(request, 'twitterviews/index.html', {'tweets': tweets})
 
 def registration(request):
     if request.method == 'POST':

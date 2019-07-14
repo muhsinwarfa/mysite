@@ -1,7 +1,12 @@
 body{
-    background-color: black;
+    background-color: #ccfff3;
 }
 
+.menu-bar{
+    background: white;
+    width: 600px;
+    margin: auto;
+}
 
 .login-customized{
     width:300px;

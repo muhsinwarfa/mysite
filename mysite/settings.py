@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'twitter.apps.TwitterConfig',
     'bootstrap4',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [
