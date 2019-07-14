@@ -21,14 +21,15 @@
 
     <ul class="list-group listoftweets">
          {% for  tweet in tweets %}
-            <li class="list-group-item tweetitem ">{{ tweet.tweet_text }}</li>
-{#             <a class="btn btn-primary btn-sm" href="{% url 'delete_tweet'  tweet.tweet_id %}" role="button"> delete this tweet</a>#}
+            <a href="#" class="list-group-item list-group-item-action tweetitem"> {{ tweet.tweet_text }}</a>
             <br>
         {%  endfor %}
 
     </ul>
 
 {#    <a href={% url 'create_tweet' %}>Create a tweet</a>#}
+{#  <a class="btn btn-primary btn-sm" href="{% url 'delete_tweet'  tweet.tweet_id %}" role="button"> delete this tweet</a>#}
+
 </div>
 </body>
 

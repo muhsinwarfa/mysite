@@ -32,21 +32,25 @@ def delete_tweet(request,id):
     return redirect('list_tweets')
 
 
+# def view_tweet(request,id):
+#     tweet = Tweet.objects.get(tweet_id=id)
+#     return
 def registration(request):
 
     if request.method == 'POST':
         form = UserCreationForm(request.POST)
+
         if form.is_valid():
             form.save()
             username = form.cleaned_data['username']
             password = form.cleaned_data['password1']
-            user= authenticate(username= username, password= password)
-            login(request,user)
-            return redirect('http://127.0.0.1:8000/twitter/')
-
+            user = authenticate(username=username, password=password)
+            login(request, user)
+            return redirect('list_tweets')
     else:
-         form = UserCreationForm()
-    context = {'form' : form}
-    return render(request, 'registration/register.html' , context)
+        form = UserCreationForm()
+
+    context = {'form': form}
+    return render(request, 'registration/register.html', context )
 
 
