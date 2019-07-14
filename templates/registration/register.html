@@ -5,17 +5,60 @@
 {% bootstrap_messages %}
 {% load static %}
 
+<style type="text/css">
+    .registrationform{
+        width: 500px;
+        margin: auto;
+        background-color: #a6b2b3;
+        margin-top: 50px;
+    }
 
-<body>
-    <form method="post" action="{% url 'register' %}">
-        {% csrf_token %}
-        {% if form.errors %}
-             <p>There is something wrong with what you entered!</p>
+    label{
+        margin-right: 50px;
+    }
+    .registrbtn{
+        margin-left: 179px;
+        margin-bottom: 30px;
+    }
+
+    .groupfield{
+        background-color: transparent;
+        display: inline;
+
+    }
+
+    .helptext{
+        font-style: italic;
+    }
+
+</style>
+<body class=".list-unstyled">
+    <form method="post" action="{% url 'register' %}" >
+        <div class="registrationform ">
+            {% load widget_tweaks %}
+            {% csrf_token %}
+            {% if form.errors %}
+                <p>There is something wrong with what you entered!</p>
+            {% endif %}
+
+        {% for field in form %}
+    <div class="fieldWrapper groupfield">
+        {{ field.errors }}
+        {{ field.label_tag }} {{ field }}
+        {% if field.help_text %}
+        <p class="help helptext">{{ field.help_text|safe }}</p>
         {% endif %}
+     </div>
 
-        {{ form }}
+{% endfor %}
 
-        <input type="submit" value="Register">
+
+
+            <div>
+                <input class="btn btn-primary registrbtn" type="submit" value="Register">
+            </div>
+        </div>
+
     </form>
 
 </body>
