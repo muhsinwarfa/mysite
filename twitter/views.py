@@ -27,6 +27,12 @@ def create_tweet(request):
     return render(request, 'twitterviews/newtweetform.html', {'form':form})
 
 
+def view_tweet(request,id):
+    tweet = Tweet.objects.get(tweet_id=id)
+    context= {'tweet': tweet}
+    return render(request, 'twitterviews/view.html', context)
+
+
 def delete_tweet(request,id):
 
     tweet= Tweet.objects.get(tweet_id=id)
