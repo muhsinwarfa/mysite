@@ -4,13 +4,15 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import  authenticate, login
 from .models import Tweet,Activity,Follower
 from .forms import TweetForm
+from django.contrib.auth.decorators import login_required
+
 
 # Create your views here.
 
 # def index(request):
 #     return render(request, 'twitterviews/index.html')
 
-
+@login_required
 def list_tweets(request):
     tweets= Tweet.objects.all()
     return render(request, 'twitterviews/index.html', {'tweets': tweets})
