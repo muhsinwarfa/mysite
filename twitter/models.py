@@ -5,26 +5,27 @@ from datetime import date
 
 # Create your models here.
 class Tweet(models.Model):
-    tweet_id = models.IntegerField(primary_key=True)
+    tweet_id = models.AutoField(primary_key=True)
     user_id = models.ForeignKey(User, on_delete=models.CASCADE)
-    tweet_text = models.CharField(max_length= 150)
-    time_posted = models.DateField()
-    is_retweet = models.IntegerField()
-    is_tweet = models.IntegerField()
-    is_reply = models.IntegerField()
-    like_count = models.IntegerField()
-    retweet_count = models.IntegerField()
-    reply_count = models.IntegerField()
-    original_tweet_id = models.IntegerField()
+    tweet_text = models.CharField(max_length= 150, null=False, blank=False)
+    created_at = models.DateTimeField(auto_now_add=True)
+    is_retweet = models.IntegerField(default='0', null=True, blank=True)
+    is_tweet = models.IntegerField(default='0', null=True, blank=True)
+    is_reply = models.IntegerField(default='0',null=True, blank=True)
+    like_count = models.IntegerField(default='0',null=True, blank=True)
+    retweet_count = models.IntegerField(default='0',null=True, blank=True)
+    reply_count = models.IntegerField(default='0',null=True, blank=True)
+    original_tweet_id = models.IntegerField(null=True, blank=True)
 
 class Activity(models.Model):
-    activity_id = models.IntegerField(primary_key=True)
-    user_id = models.IntegerField()
+    activity_id = models.AutoField(primary_key=True)
+    user_id = models.ForeignKey(User, on_delete=models.CASCADE)
     activity_name = models.CharField(max_length=50)
     user_id_2 = models.IntegerField()
     date_time = models.DateField()
 
 
 class Follower(models.Model):
-    user_id = models.IntegerField()
-    user_id_2 = models.IntegerField()
+    user_id = models.ForeignKey(User, on_delete=models.CASCADE)
+    user_id_1 = models.IntegerField(default='1')
+    user_id_2 = models.IntegerField(default='2')

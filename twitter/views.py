@@ -17,22 +17,22 @@ def list_tweets(request):
     tweets= Tweet.objects.all()
     return render(request, 'twitterviews/index.html', {'tweets': tweets})
 
-
+@login_required
 def create_tweet(request):
 
     form = TweetForm(request.POST or None)
     if form.is_valid():
         form.save()
         return redirect('list_tweets')
-    return render(request, 'twitterviews/newtweetform.html', {'form':form})
+    return render(request, 'twitterviews/newtweetform.html', {'form': form})
 
-
+@login_required
 def view_tweet(request,id):
     tweet = Tweet.objects.get(tweet_id=id)
     context= {'tweet': tweet}
     return render(request, 'twitterviews/view.html', context)
 
-
+@login_required
 def delete_tweet(request,id):
 
     tweet= Tweet.objects.get(tweet_id=id)

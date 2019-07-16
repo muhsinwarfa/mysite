@@ -9,7 +9,7 @@
 <nav class="navbar navbar-expand-lg menu-bar">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="/twitter/">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="{% url 'list_tweets' %}">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
           {% if user.is_authenticated %}
@@ -22,8 +22,10 @@
 </nav>
 <br>
 
+    <div class="viewtweet">
+         <p>{{  tweet.tweet_text }} </p>
+    </div>
 
-    <h2>{{  tweet.tweet_text }} </h2>
 
 
 

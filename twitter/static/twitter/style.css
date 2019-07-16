@@ -9,6 +9,14 @@ body{
     margin-left: 366px;
 }
 
+.viewtweet{
+    width: 600px;
+    margin-left: 384px;
+    background-color: #ededed;
+    color: black;
+    padding: 20px;
+    padding: auto;
+}
 
 
 .menu-bar{
