@@ -23,7 +23,6 @@ def list_tweets(request):
 def create_tweet(request):
      if request.method == 'POST':
         form = TweetForm(request.POST)
-
         if form.is_valid():
             obj = form.save(commit=False)
             obj.user = request.user

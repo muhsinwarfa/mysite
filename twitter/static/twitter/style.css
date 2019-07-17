@@ -1,28 +1,40 @@
 body{
-    background-color: #ccfff3;
+    background-color: white;
+    /*#1da1f2*/
 }
 
 
 .tweetitem{
     width: 600px;
 
-    margin-left: 366px;
+    margin-left: 350px;
+    padding: 30px;
 }
 
 .viewtweet{
     width: 600px;
     margin-left: 384px;
-    background-color: #ededed;
+    background-color: white;
     color: black;
-    padding: 20px;
+    padding: 40px;
     padding: auto;
 }
 
-
+.newtweeet{
+    margin: 100px;
+    margin:auto;
+    width: 300px;
+    background-color: #ebebeb;
+    padding:50px;
+    padding: auto;
+}
 .menu-bar{
     background: white;
     width: 600px;
     margin: auto;
+    color: #1da1f2;
+
+
 }
 
 .login-customized{

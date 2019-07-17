@@ -7,7 +7,7 @@
 
 <body>
 <nav class="navbar navbar-expand-lg menu-bar">
-    <ul class="navbar-nav mr-auto">
+    <ul class="nav nav-tabs">
       <li class="nav-item active">
         <a class="nav-link" href="{% url 'list_tweets' %}">Home <span class="sr-only">(current)</span></a>
       </li>
@@ -22,7 +22,7 @@
 </nav>
 <br>
 
-    <div class="viewtweet">
+    <div class="viewtweet list-group-item list-group-item-action">
          <p>{{  tweet.tweet_text }} </p>
     </div>
 

@@ -7,18 +7,16 @@
 
 <body>
 
-    <h1>New Tweet</h1>
-
-{#    <form method="POST">#}
-{#        {% csrf_token %}#}
-{#        {{ form }}#}
-{#        <button type="submit">Post Tweet </button>#}
-{#    </form>#}
 
 
+ <div class="login-customized newtweeet" >
     <form method="POST" action="{% url 'create_tweet' %}" >
         {%  csrf_token %}
-        <p>Tweet: {{form.tweet_text}}</p>
-        <input type="submit" value="Post tweet">
+        <br>
+        <div class="form-group">Tweet:   {{form.tweet_text}}
+        </div>
+        <br>
+        <input type="submit" class="btn btn-primary" value="Post tweet">
     </form>
+ </div>
 </body>
