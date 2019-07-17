@@ -5,6 +5,8 @@ from django.contrib.auth import  authenticate, login
 from .models import Tweet,Activity,Follower
 from .forms import TweetForm
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.models import User
+
 
 
 # Create your views here.
@@ -19,12 +21,15 @@ def list_tweets(request):
 
 @login_required
 def create_tweet(request):
-
-    form = TweetForm(request.POST or None)
-    if form.is_valid():
-        form.save()
+     if request.method == 'POST':
+        form = TweetForm(request.POST)
+        if form.is_valid():
+            form.user = request.user
+            form.save()
         return redirect('list_tweets')
-    return render(request, 'twitterviews/newtweetform.html', {'form': form})
+     form = TweetForm()
+     return render(request, 'twitterviews/newtweetform.html', {'form': form})
+
 
 @login_required
 def view_tweet(request,id):
@@ -34,8 +39,7 @@ def view_tweet(request,id):
 
 @login_required
 def delete_tweet(request,id):
-
-    tweet= Tweet.objects.get(tweet_id=id)
+    tweet = Tweet.objects.get(tweet_id=id)
     tweet.delete()
     return redirect('list_tweets')
 
@@ -44,10 +48,8 @@ def delete_tweet(request,id):
 #     tweet = Tweet.objects.get(tweet_id=id)
 #     return
 def registration(request):
-
     if request.method == 'POST':
         form = UserCreationForm(request.POST)
-
         if form.is_valid():
             form.save()
             username = form.cleaned_data['username']

@@ -18,9 +18,7 @@
 
     <form method="POST" action="{% url 'create_tweet' %}" >
         {%  csrf_token %}
-        {{ form }}
-{#            <p>Tweet: {{ form.tweet_text }}</p>#}
+        <p>Tweet: {{form.tweet_text}}</p>
         <input type="submit" value="Post tweet">
-        <input type="hidden" name= "next" value="{{ next }}">
     </form>
 </body>
