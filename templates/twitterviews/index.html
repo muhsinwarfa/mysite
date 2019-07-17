@@ -26,7 +26,8 @@
     <ul class="list-group listoftweets">
          {% for  tweet in tweets %}
             <a href= "{% url 'view_tweet' tweet.tweet_id %}" class="list-group-item list-group-item-action tweetitem"> {{ tweet.tweet_text }} </a>
-            <br>
+            <p>{{ tweet.user }}</p>
+             <br>
          {%  endfor %}
 
     </ul>

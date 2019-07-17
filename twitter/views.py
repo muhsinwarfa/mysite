@@ -23,9 +23,11 @@ def list_tweets(request):
 def create_tweet(request):
      if request.method == 'POST':
         form = TweetForm(request.POST)
+
         if form.is_valid():
-            form.user = request.user
-            form.save()
+            obj = form.save(commit=False)
+            obj.user = request.user
+            obj.save()
         return redirect('list_tweets')
      form = TweetForm()
      return render(request, 'twitterviews/newtweetform.html', {'form': form})
