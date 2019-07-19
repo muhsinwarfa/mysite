@@ -14,13 +14,21 @@
         </div>
         <div class="col-6 profile-section">
                 <img class="rounded-circle profile-image" src="{{ user.profile.image.url }}">
-                <h2 class="">{{ user.username }}</h2>
+                <h5 class="">{{ user.username }}</h5>
+                <h5 class="">{{ user.email }}</h5>
+
         </div>
         <div class="col">
-
+             <form method="post" action="{% url 'user_profile' %}"  enctype="multipart/form-data">
+                {%  csrf_token %}
+                 <div class="form-group">
+                     {{ u_form }}
+                     {{ p_form }}
+                 </div>
+                 <input type="submit" class="btn btn-primary mb-2" value="Update">
+              </form>
         </div>
     </div>
-
 </div>
 
 </body>

@@ -12,7 +12,7 @@ urlpatterns = [
      path('view/<int:id>', views.view_tweet, name= 'view_tweet'),
     # path('accounts/', views.index, name= 'login'),
     path('register', views.registration, name= 'register'),
-    path('userprofile', views.user_profile, name= 'user_profile'),
+    path('userprofile', views.profile, name= 'user_profile'),
 ]
 
 if settings.DEBUG:

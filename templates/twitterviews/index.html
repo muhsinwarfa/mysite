@@ -28,7 +28,7 @@
 <div class="navbar navbar-expand-lg">
     <ul class="list-group listoftweets">
          {% for  tweet in tweets %}
-            <a href= "{% url 'view_tweet' tweet.tweet_id %}" class="list-group-item list-group-item-action tweetitem"><br> <span class="spanforuser">Tweeted by: {{ tweet.user }} <br></span> <br>{{ tweet.tweet_text }} </a>
+            <a href= "{% url 'view_tweet' tweet.tweet_id %}" class="list-group-item list-group-item-action tweetitem"><br>  <img class="rounded-circle  index-image-profile" src="{{ tweet.user.profile.image.url }}"><br><span class="spanforuser"> {{ tweet.user }} <br></span> <br>{{ tweet.tweet_text }} </a>
          {%  endfor %}
     </ul>
 
