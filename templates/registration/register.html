@@ -4,61 +4,22 @@
 {% bootstrap_javascript jquery='full' %}
 {% bootstrap_messages %}
 {% load static %}
+{% load crispy_forms_tags %}
 
-<style type="text/css">
-    .registrationform{
-        width: 500px;
-        margin: auto;
-        background-color: #a6b2b3;
-        margin-top: 50px;
-    }
 
-    label{
-        margin-right: 50px;
-    }
-    .registrbtn{
-        margin-left: 179px;
-        margin-bottom: 30px;
-    }
-
-    .groupfield{
-        background-color: transparent;
-        display: inline;
-
-    }
-
-    .helptext{
-        font-style: italic;
-    }
-
-</style>
-<body class=".list-unstyled">
-    <form method="post" action="{% url 'register' %}" >
-        <div class="registrationform ">
-            {% load widget_tweaks %}
+<body>
+    <div class="container">
+        <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+        <form method="post" action="{% url 'register' %}" >
             {% csrf_token %}
-            {% if form.errors %}
-                <p>There is something wrong with what you entered!</p>
-            {% endif %}
-
-        {% for field in form %}
-    <div class="fieldWrapper groupfield">
-        {{ field.errors }}
-        {{ field.label_tag }} {{ field }}
-        {% if field.help_text %}
-        <p class="help helptext">{{ field.help_text|safe }}</p>
-        {% endif %}
-     </div>
-
-{% endfor %}
-
-
-
-            <div>
-                <input class="btn btn-primary registrbtn" type="submit" value="Register">
-            </div>
+            {{ form|crispy }}
+            <input class="btn btn-primary registrbtn" type="submit" value="Register">
+        </form>
+        </div>
+        <div class="col-3"></div>
         </div>
 
-    </form>
-
+    </div>
 </body>

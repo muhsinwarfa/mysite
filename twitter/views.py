@@ -47,16 +47,13 @@ def delete_tweet(request,id):
 @login_required
 def profile(request):
     if request.method == 'POST':
-        print("hi")
         u_form = UserUpdateForm(request.POST, instance=request.user)
         p_form = ProfileUpdateForm(request.POST, request.FILES, instance=request.user.profile)
-        print(p_form)
-        print(u_form)
+
         if u_form.is_valid() and p_form.is_valid():
             u_form.save()
             p_form.save()
-            print("works fine")
-            redirect('list_tweets')
+            redirect('profile')
     else:
         u_form = UserUpdateForm(instance=request.user)
         p_form = ProfileUpdateForm(instance=request.user.profile)
@@ -66,6 +63,7 @@ def profile(request):
         'p_form': p_form
     }
     return render(request, 'twitterviews/profile.html', context)
+
 
 # def view_tweet(request,id):
 #     tweet = Tweet.objects.get(tweet_id=id)

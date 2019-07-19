@@ -24,9 +24,10 @@ body{
     margin: 100px;
     margin:auto;
     width: 300px;
-    background-color: #ebebeb;
     padding:50px;
     padding: auto;
+    background-color: white;
+    border: 1px solid lightgrey;
 }
 .menu-bar{
     background: white;

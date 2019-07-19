@@ -3,6 +3,7 @@
 {% bootstrap_javascript jquery='full' %}
 {% bootstrap_messages %}
 {% load static %}
+{% load crispy_forms_tags %}
 
 <style type="text/css">
 	.login-form {
@@ -43,9 +44,10 @@
 
     <form method="post" action="{% url 'login' %}" >
         {%  csrf_token %}
-            <p>username: {{ form.username }}</p>
-            <p>password: {{ form.password }}</p>
-        <input type="submit" value="login">
+{#            <p>username: {{ form.username }}</p>#}
+{#            <p>password: {{ form.password }}</p>#}
+        {{ form|crispy  }}
+        <input class="btn btn-primary mb-2" type="submit" value="login">
         <input type="hidden" name= "next" value="{{ next }}">
     </form>
 
