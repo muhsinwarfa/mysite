@@ -36,7 +36,18 @@ body{
 
 
 }
+.profile-section{
+    background-color: white;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    padding: 20px;
+    padding: auto;
+}
 
+.profile-image{
+    width: 100px;
+    height: 100px;
+}
 .spanforuser{
 
 }
