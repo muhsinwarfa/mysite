@@ -44,6 +44,9 @@ def delete_tweet(request,id):
     tweet.delete()
     return redirect('list_tweets')
 
+def user_profile(request):
+    users = User.objects.all()
+    return render(request,'twitterviews/profile.html', {'users': users})
 
 # def view_tweet(request,id):
 #     tweet = Tweet.objects.get(tweet_id=id)

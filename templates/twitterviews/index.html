@@ -11,6 +11,9 @@
       <li class="nav-item active">
         <a class="nav-link" href="{% url 'list_tweets' %}">Home <span class="sr-only">(current)</span></a>
       </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'user_profile' %}"> Profile <span class="sr-only">(current)</span></a>
+      </li>
       <li class="nav-item">
           {% if user.is_authenticated %}
         <a class="nav-link" href="/accounts/logout/">Logout as {{ user }}</a>
@@ -27,7 +30,6 @@
          {% for  tweet in tweets %}
             <a href= "{% url 'view_tweet' tweet.tweet_id %}" class="list-group-item list-group-item-action tweetitem"><br> <span class="spanforuser">Tweeted by: {{ tweet.user }} <br></span> <br>{{ tweet.tweet_text }} </a>
          {%  endfor %}
-
     </ul>
 
 {#    <a href={% url 'create_tweet' %}>Create a tweet</a>#}
