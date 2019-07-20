@@ -37,13 +37,6 @@ body{
 
 
 }
-.profile-section{
-    background-color: white;
-    border: 2px solid black;
-    border-radius: 4px;
-    padding: 20px;
-    padding: auto;
-}
 
 .profile-image{
     width: 100px;
@@ -68,5 +61,16 @@ margin-left: 350px;
 .regitration-form{
         border: 1px solid lightgrey;
 
+}
 
+.bio{
+    background-color: white;
+    border: 2px solid lightgrey;
+    border-radius: 1px;
+    padding: 20px;
+    padding: auto;
+}
+.search{
+    width: 600px;
+    margin-left: 366px;
 }

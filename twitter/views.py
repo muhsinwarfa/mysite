@@ -88,11 +88,8 @@ def registration(request):
 @login_required
 def bio(request, username):
     user = User.objects.get(username=username)
-    print(user)
-    profile_user = Profile(user=user)
     context = {
         'user': user,
-        'profile': profile_user
     }
     return render(request,'twitterviews/bio.html',context)
 
