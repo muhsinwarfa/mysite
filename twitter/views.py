@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import  authenticate, login
-from .models import Tweet,Activity,Follower
+from .models import Tweet,Activity,Follower,Profile
 from .forms import TweetForm,UserUpdateForm,ProfileUpdateForm
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
@@ -84,4 +84,15 @@ def registration(request):
     context = {'form': form}
     return render(request, 'registration/register.html', context )
 
+
+@login_required
+def bio(request, username):
+    user = User.objects.get(username=username)
+    print(user)
+    profile_user = Profile(user=user)
+    context = {
+        'user': user,
+        'profile': profile_user
+    }
+    return render(request,'twitterviews/bio.html',context)
 

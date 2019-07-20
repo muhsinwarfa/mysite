@@ -39,7 +39,7 @@ body{
 }
 .profile-section{
     background-color: white;
-    border: 1px solid lightgrey;
+    border: 2px solid black;
     border-radius: 4px;
     padding: 20px;
     padding: auto;
@@ -57,9 +57,16 @@ body{
 .spanforuser{
 
 }
-
+.profile-link{
+margin-left: 350px;
+    margin-bottom: 50px;
+}
 .login-customized{
     width:300px;
     margin: auto;
 }
+.regitration-form{
+        border: 1px solid lightgrey;
 
+
+}

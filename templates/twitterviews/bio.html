@@ -1,0 +1,22 @@
+{% load bootstrap4 %}
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
+{% bootstrap_messages %}
+{% load static %}
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col">
+        </div>
+        <div class="col-6 profile-section">
+                <img class="rounded-circle profile-image" src="{{ user.profile.image.url }}">
+                <h5 class="">{{ user.username }}</h5>
+                <h5 class="">{{ user.email }}</h5>
+                {{ profile_user }}
+        </div>
+        <div class="col">
+        </div>
+    </div>
+</div>
+
+</body>
