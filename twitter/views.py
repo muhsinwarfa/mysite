@@ -16,8 +16,28 @@ from django.contrib.auth.models import User
 
 @login_required
 def list_tweets(request):
-    tweets= Tweet.objects.all()
-    return render(request, 'twitterviews/index.html', {'tweets': tweets})
+    # get all follower objects
+    followers = Follower.objects.all()
+    # store the user ids of the users that are being followed by the currently logged in user
+    listofusers = []
+    for follower in followers:
+        if follower.user == request.user:
+            listofusers.append(follower.user_id_2)
+    # now list of users has all the ids the currently logged in user plus the id of the current user
+    listofusers.append(request.user.id)
+    tweets = Tweet.objects.filter(user__in=listofusers)
+    context={
+        'tweets': tweets
+    }
+    return render(request, 'twitterviews/index.html',context)
+
+
+
+# @login_required
+# def list_tweets(request):
+#     tweets= Tweet.objects.all()
+#     return render(request, 'twitterviews/index.html', {'tweets': tweets})
+
 
 @login_required
 def create_tweet(request):
@@ -26,10 +46,31 @@ def create_tweet(request):
         if form.is_valid():
             obj = form.save(commit=False)
             obj.user = request.user
+            obj.is_tweet = 1
             obj.save()
         return redirect('list_tweets')
      form = TweetForm()
+
      return render(request, 'twitterviews/newtweetform.html', {'form': form})
+#
+# @login_required
+# def create_retweet(request):
+#
+#
+# @login_required
+# def create_reply(request)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @login_required
@@ -92,4 +133,19 @@ def bio(request, username):
         'user': user,
     }
     return render(request,'twitterviews/bio.html',context)
+
+def follow(request,username):
+    user = User.objects.get(username=username)
+    follow = Follower()
+    follow.user = request.user
+    follow.user_id_2 = user.id
+    follow.save()
+    redirect(request,"twitterviews/bio.html")
+
+def unfollow(request,username):
+    user_to_be_unfollowed = User.objects.get(username=username)
+    unfollow_obj = Follower(request.user,user_to_be_unfollowed.id)
+    unfollow_obj.delete()
+    redirect(request,"twitterviews/bio.html")
+
 

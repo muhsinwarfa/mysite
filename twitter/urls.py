@@ -14,7 +14,7 @@ urlpatterns = [
     path('register', views.registration, name='register'),
     path('profile',views.profile,name='profile'),
     path('bio/<username>',views.bio, name='bio_page'),
-]
+    ]
 
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

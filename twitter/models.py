@@ -23,13 +23,14 @@ class Activity(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     activity_name = models.CharField(max_length=50)
     user_id_2 = models.IntegerField()
-    date_time = models.DateField()
+    date_time = models.DateTimeField(auto_now_add=True)
 
 
 class Follower(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    user_id_1 = models.IntegerField(default='1')
     user_id_2 = models.IntegerField(default='2')
+
+
 
 
 class Profile(models.Model):

@@ -4,6 +4,9 @@
 {% bootstrap_messages %}
 {% load static %}
 <link rel="stylesheet" type="text/css" href="{% static 'twitter/style.css' %}">
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+
 
 <body>
 {#navbar section#}
@@ -38,11 +41,34 @@
             <h5>Likes:  26</h5>
             <h5>Followers:  125 </h5>
             <h5>Retweets: 1000</h5>
+            <p>click down to follow/unfollow: </p>
+            <div id="time" >
+                <p>Following {{ user.username }}</p>
+            </div>
+
+
 
         </div>
         <div class="col">
+
         </div>
     </div>
 </div>
+<script>
+function handler1() {
+    $(this).animate({
+        width: "260px"
+    }, 1500);
 
+    $(this).one("click", handler2);
+}
+
+function handler2() {
+    $(this).animate({
+        width: "30px"
+    }, 1500);
+    $(this).one("click", handler1);
+}
+$("#time").one("click", handler1);
+</script>
 </body>

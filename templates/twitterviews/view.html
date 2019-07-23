@@ -3,6 +3,9 @@
 {% bootstrap_javascript jquery='full' %}
 {% bootstrap_messages %}
 {% load static %}
+{% load fontawesome %}
+{% fontawesome_stylesheet %}
+
 <link rel="stylesheet" type="text/css" href="{% static 'twitter/style.css' %}">
 
 <body>
@@ -21,9 +24,22 @@
     </ul>
 </nav>
 <br>
+{##}
+{#    <div class="viewtweet list-group-item list-group-item-action">#}
+{#         <p>{{  tweet.tweet_text }} </p>#}
+{#         <i class="fa fa-reply" aria-hidden="true"></i>#}
+{#    </div>#}
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-6 viewtweet">
+                 <p>{{  tweet.tweet_text }} </p>
+                 <a href=""><i class="fa fa-reply replyicon" aria-hidden="true"></i></a>
+            </div>
+            <div class="col"></div>
+        </div>
 
-    <div class="viewtweet list-group-item list-group-item-action">
-         <p>{{  tweet.tweet_text }} </p>
+
     </div>
 
 
