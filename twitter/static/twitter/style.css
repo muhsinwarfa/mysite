@@ -82,6 +82,12 @@ body{
     margin-top: 40px;
     margin-left: 400px;
 }
+
+.indexicons{
+    margin-left: 20px;
+    margin-top: 10px;
+    color: black;
+}
 .regitration-form{
         border: 1px solid lightgrey;
 

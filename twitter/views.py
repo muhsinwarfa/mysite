@@ -45,13 +45,6 @@ def create_tweet(request):
      form = TweetForm()
 
      return render(request, 'twitterviews/newtweetform.html', {'form': form})
-#
-# @login_required
-# def create_retweet(request):
-#
-#
-# @login_required
-# def create_reply(request)
 
 
 @login_required
@@ -139,9 +132,6 @@ def profile(request):
     return render(request, 'twitterviews/profile.html', context)
 
 
-# def view_tweet(request,id):
-#     tweet = Tweet.objects.get(tweet_id=id)
-#     return
 def registration(request):
     if request.method == 'POST':
         form = UserCreationForm(request.POST)
