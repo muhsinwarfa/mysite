@@ -79,8 +79,8 @@ body{
 }
 .login-customized{
     width:300px;
-    margin-top: 100px;
-    margin: auto;
+    margin-top: 40px;
+    margin-left: 400px;
 }
 .regitration-form{
         border: 1px solid lightgrey;
@@ -111,4 +111,9 @@ body{
 }
 #time p {
     margin-left:35px;
+}
+.border{
+        border: 1px solid lightgrey;
+        padding: 50px;
+
 }
