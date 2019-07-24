@@ -80,12 +80,29 @@ def create_reply(request,id):
 
 
 
+def create_retweet(request,id):
+    # get the original tweet using the viewed tweet id
+    original_tweet = Tweet.objects.get(tweet_id=id)
+    if request.method == 'POST':
+        form = TweetForm(request.POST)
+        if form.is_valid():
+            # fill in the respective fields for a reply tweet
+            obj = form.save(commit=False)
+            obj.user = request.user
+            obj.is_retweet = 1
+            original_tweet.retweet_count += 1
+            original_tweet.save()
+            obj.original_tweet_id = id
+            obj.save()
+        return redirect('list_tweets')
+    form = TweetForm()
+    context = {
+        'form': form,
+        'id': id,
+        'original_tweet': original_tweet
+    }
 
-
-
-
-
-
+    return render(request, 'twitterviews/newretweetform.html', context)
 
 
 @login_required

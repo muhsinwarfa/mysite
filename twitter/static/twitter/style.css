@@ -38,6 +38,9 @@ body{
     border: 1px solid red;
 
 }
+.orginaltweetlink{
+    color:  #1da1f2;
+}
 .newtweeet{
     margin-top: 100px;
     margin:auto;
