@@ -1,7 +1,7 @@
 from django import forms
 from twitter.models import Tweet
 from django.contrib.auth.models import User
-from .models import Profile
+from .models import Profile,Follower
 
 class TweetForm(forms.ModelForm):
     class Meta:
@@ -23,3 +23,8 @@ class ProfileUpdateForm(forms.ModelForm):
         fields = ['image']
 
 
+class FollowerForm(forms.ModelForm):
+    user_id_2 = forms.ModelChoiceField(queryset=User.objects.all(), empty_label=None)
+    class Meta:
+        model = Follower
+        exclude = ('user',)

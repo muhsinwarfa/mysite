@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import  authenticate, login
 from .models import Tweet,Activity,Follower,Profile
-from .forms import TweetForm,UserUpdateForm,ProfileUpdateForm
+from .forms import TweetForm,UserUpdateForm,ProfileUpdateForm,FollowerForm
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 
@@ -172,3 +172,20 @@ def unfollow(request,username):
     redirect(request,"twitterviews/bio.html")
 
 
+
+
+def newusers(request):
+    # get all registered users
+    users = User.objects.all()
+    if request.method == 'POST':
+        test = request.POST['user_id_2']
+        form = FollowerForm()
+        obj = form.save(commit=False)
+        obj.user = request.user
+        obj.user_id_2 = test
+        obj.save()
+        return redirect('list_tweets')
+    else:
+        form = FollowerForm()
+
+    return render(request, 'twitterviews/newfollow.html', {'form': form, 'users':users})

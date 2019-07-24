@@ -17,6 +17,9 @@
       <li class="nav-item active">
         <a class="nav-link" href="{% url 'profile' %}"> Profile <span class="sr-only">(current)</span></a>
       </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'newusers' %}"> Look and Follow Users <span class="sr-only">(current)</span></a>
+      </li>
       <li class="nav-item">
           {% if user.is_authenticated %}
         <a class="nav-link" href="/accounts/logout/">Logout as {{ user }}</a>

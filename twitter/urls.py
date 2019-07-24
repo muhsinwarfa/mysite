@@ -14,7 +14,8 @@ urlpatterns = [
     path('profile',views.profile,name='profile'),
     path('bio/<username>',views.bio, name='bio_page'),
     path('view/<int:id>/reply',views.create_reply,name='create_reply'),
-    path('view/<int:id>/retweet', views.create_retweet, name='create_retweet')
+    path('view/<int:id>/retweet', views.create_retweet, name='create_retweet'),
+    path('newusers',views.newusers,name='newusers')
 ]
 
 if settings.DEBUG:

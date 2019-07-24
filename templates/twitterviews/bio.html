@@ -7,7 +7,6 @@
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 
 
-
 <body>
 {#navbar section#}
 <nav class="navbar navbar-expand-lg menu-bar">
@@ -38,16 +37,12 @@
             <img class="rounded-circle profile-image" src="{{ user.profile.image.url }}">
             <h5 class="">{{ user.username }}</h5>
             <h5 class="">{{ user.email }}</h5>
-            <h5>Likes:  26</h5>
             <h5>Followers:  125 </h5>
-            <h5>Retweets: 1000</h5>
+            <h5>Retweets: 1000 </h5>
             <p>click down to follow/unfollow: </p>
             <div id="time" >
-                <p>Following {{ user.username }}</p>
+                <p>Following: {{ user.username }}</p>
             </div>
-
-
-
         </div>
         <div class="col">
 
