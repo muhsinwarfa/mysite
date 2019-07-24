@@ -25,6 +25,19 @@ body{
 .reply{
     margin-top:20px;
 }
+.deletebutton{
+    width: 600px;
+    margin-left: 350px;
+    background-color: #f7f7f7;
+    color:black;
+    border: 1px solid lightgrey;
+
+}
+.deletebutton:hover{
+    background-color:red;
+    border: 1px solid red;
+
+}
 .newtweeet{
     margin-top: 100px;
     margin:auto;
@@ -56,8 +69,10 @@ body{
 
 }
 .profile-link{
-margin-left: 350px;
+    margin-left: 350px;
     margin-bottom: 50px;
+    border: 1px solid lightgrey;
+
 }
 .login-customized{
     width:300px;

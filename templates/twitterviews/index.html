@@ -33,13 +33,17 @@
 <div class="navbar navbar-expand-lg">
     <ul class="list-group listoftweets">
          {% for  tweet in tweets %}
-            <a href= "{% url 'view_tweet' tweet.tweet_id %}" class="list-group-item list-group-item-action tweetitem"><br>  <img class="rounded-circle  index-image-profile" src="{{ tweet.user.profile.image.url }}"><br><span class="spanforuser"> {{ tweet.user }} <br></span> <br>{{ tweet.tweet_text }}</a>
-            <a href="{% url 'bio_page' tweet.user %}" class="btn btn-light profile-link">See user bio</a>
+             {% if tweet.is_tweet == 1 %}
+                <a href= "{% url 'view_tweet' tweet.tweet_id %}" class="list-group-item list-group-item-action tweetitem"><br>  <img class="rounded-circle  index-image-profile" src="{{ tweet.user.profile.image.url }}"><br><span class="spanforuser"> {{ tweet.user }} <br></span> <br>{{ tweet.tweet_text }}</a>
+                   {% if tweet.user == request.user %}
+                       <a class="btn btn-primary btn-sm deletebutton" href="{% url 'delete_tweet'  tweet.tweet_id %}" role="button"> delete this tweet</a>
+                  {% endif %}
+                 <a href="{% url 'bio_page' tweet.user %}" class="btn btn-light profile-link">See user bio</a>
+
+            {% endif %}
          {%  endfor %}
     </ul>
 
-{#    <a href={% url 'create_tweet' %}>Create a tweet</a>#}
-{#  <a class="btn btn-primary btn-sm" href="{% url 'delete_tweet'  tweet.tweet_id %}" role="button"> delete this tweet</a>#}
 
 </div>
 </body>
