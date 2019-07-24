@@ -22,6 +22,9 @@ body{
 .replyicon{
     margin-left: 100px;
 }
+.reply{
+    margin-top:20px;
+}
 .newtweeet{
     margin-top: 100px;
     margin:auto;

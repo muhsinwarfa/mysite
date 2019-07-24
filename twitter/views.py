@@ -32,13 +32,6 @@ def list_tweets(request):
     return render(request, 'twitterviews/index.html',context)
 
 
-
-# @login_required
-# def list_tweets(request):
-#     tweets= Tweet.objects.all()
-#     return render(request, 'twitterviews/index.html', {'tweets': tweets})
-
-
 @login_required
 def create_tweet(request):
      if request.method == 'POST':
@@ -61,7 +54,29 @@ def create_tweet(request):
 # def create_reply(request)
 
 
+@login_required
+def create_reply(request,id):
+     # get the original tweet using the viewed tweet id
+     original_tweet = Tweet.objects.get(tweet_id=id)
+     if request.method == 'POST':
+        form = TweetForm(request.POST)
+        if form.is_valid():
+            # fill in the respective fields for a reply tweet
+            obj = form.save(commit=False)
+            obj.user = request.user
+            obj.is_reply = 1
+            original_tweet.reply_count += 1
+            original_tweet.save()
+            obj.original_tweet_id = id
+            obj.save()
+        return redirect('list_tweets')
+     form = TweetForm()
+     context = {
+         'form': form ,
+         'id': id
+     }
 
+     return render(request, 'twitterviews/newreplyform.html', context)
 
 
 
@@ -76,7 +91,8 @@ def create_tweet(request):
 @login_required
 def view_tweet(request,id):
     tweet = Tweet.objects.get(tweet_id=id)
-    context= {'tweet': tweet}
+    replies = Tweet.objects.filter(original_tweet_id=id)
+    context= {'tweet': tweet, 'replies': replies}
     return render(request, 'twitterviews/view.html', context)
 
 @login_required

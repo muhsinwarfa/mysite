@@ -14,6 +14,8 @@ urlpatterns = [
     path('register', views.registration, name='register'),
     path('profile',views.profile,name='profile'),
     path('bio/<username>',views.bio, name='bio_page'),
+    path('view/<int:id>/reply',views.create_reply,name='create_reply')
+
     ]
 
 if settings.DEBUG:

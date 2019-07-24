@@ -33,13 +33,19 @@
         <div class="row">
             <div class="col"></div>
             <div class="col-6 viewtweet">
+                <img class="rounded-circle  index-image-profile" src="{{ tweet.user.profile.image.url }}">
+                <br>
                  <p>{{  tweet.tweet_text }} </p>
-                 <a href=""><i class="fa fa-reply replyicon" aria-hidden="true"></i></a>
+                 <a href="{% url 'create_reply' tweet.tweet_id %}"><i class="fa fa-reply replyicon" aria-hidden="true"></i></a>
+
+                 <ul class="list-group listoftweets">
+                     {% for  reply in replies %}
+                        <p class="list-group-item list-group-item-action reply">{{ reply.tweet_text }}</p>
+                     {%  endfor %}
+                 </ul>
             </div>
             <div class="col"></div>
         </div>
-
-
     </div>
 
 
