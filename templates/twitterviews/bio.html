@@ -3,6 +3,8 @@
 {% bootstrap_javascript jquery='full' %}
 {% bootstrap_messages %}
 {% load static %}
+{% load fontawesome %}
+{% fontawesome_stylesheet %}
 <link rel="stylesheet" type="text/css" href="{% static 'twitter/style.css' %}">
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 
@@ -39,31 +41,19 @@
             <h5 class="">{{ user.email }}</h5>
             <h5>Followers:  125 </h5>
             <h5>Retweets: 1000 </h5>
-            <p>click down to follow/unfollow: </p>
-            <div id="time" >
-                <p>Following: {{ user.username }}</p>
-            </div>
+
+            <ul class="list-group listoftweets">
+                {% for  tweet in tweets %}
+                    {% if tweet.user == user %}
+                          <a  href= "{% url 'view_tweet' tweet.tweet_id %}" class="list-group-item list-group-item-action usertimelinetweets"><br>  <img class="rounded-circle  index-image-profile" src="{{ user.profile.image.url }}"><br><span class="spanforuser"> {{ user }} <br></span> <br>{{ tweet.tweet_text }}  <br><span> <i class="fa fa-comments indexicons" style="font-size:15px" aria-hidden="true"> {{ tweet.reply_count }}</i><i class="fa fa-retweet indexicons" style="font-size:15px"> {{ tweet.retweet_count }}</i>
+</span></a>
+                    {% endif %}
+                {% endfor %}
+            </ul>
         </div>
         <div class="col">
 
         </div>
     </div>
 </div>
-<script>
-function handler1() {
-    $(this).animate({
-        width: "260px"
-    }, 1500);
-
-    $(this).one("click", handler2);
-}
-
-function handler2() {
-    $(this).animate({
-        width: "30px"
-    }, 1500);
-    $(this).one("click", handler1);
-}
-$("#time").one("click", handler1);
-</script>
 </body>

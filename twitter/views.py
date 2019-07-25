@@ -152,8 +152,10 @@ def registration(request):
 @login_required
 def bio(request, username):
     user = User.objects.get(username=username)
+    tweets = Tweet.objects.all()
     context = {
         'user': user,
+        'tweets': tweets
     }
     return render(request,'twitterviews/bio.html',context)
 

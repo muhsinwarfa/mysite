@@ -34,7 +34,8 @@
             <div class="col"></div>
             <div class="col-6 viewtweet">
                 <img class="rounded-circle  index-image-profile" src="{{ tweet.user.profile.image.url }}">
-                <br>
+                <span>{{ tweet.user }}</span>
+                <br><br>
                  <p>{{  tweet.tweet_text }} </p>
                  <a href="{% url 'create_reply' tweet.tweet_id %}"><i class="fa fa-reply replyicon indexicons" style="font-size:15px" aria-hidden="true"> {{ tweet.reply_count }}</i></a>
                  <a href="{% url 'create_retweet' tweet.tweet_id %}"><i class="fa fa-retweet indexicons" style="font-size:15px">  {{ tweet.retweet_count }}</i></a>
@@ -42,7 +43,7 @@
                  <ul class="list-group listoftweets">
                      {% for  reply in replies %}
                          {% if reply.is_reply == 1 %}
-                            <p class="list-group-item list-group-item-action reply">{{ reply.tweet_text }}</p>
+                            <p class="list-group-item list-group-item-action reply"> <img class="rounded-circle  index-image-profile" src="{{ reply.user.profile.image.url }}"> <span>{{ reply.user }}:</span><br><br>{{ reply.tweet_text }}</p>
                          {% endif %}
                      {%  endfor %}
                  </ul>

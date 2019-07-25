@@ -33,7 +33,7 @@
 <!-- Search form -->
 <a href="{% url 'create_tweet' %}">
 <div class="md-form mt-0 search">
-  <input class="form-control" type="text" placeholder="Whats on your mind?" aria-label="Search">
+  <input class="form-control" type="text" placeholder="What's happening?" aria-label="Search">
 </div>
 </a>
 <div class="navbar navbar-expand-lg">
@@ -41,7 +41,7 @@
          {% for  tweet in tweets %}
 {#             if it is a tweet#}
              {% if tweet.is_tweet == 1  %}
-                <a href= "{% url 'view_tweet' tweet.tweet_id %}" class="list-group-item list-group-item-action tweetitem"><br>  <img class="rounded-circle  index-image-profile" src="{{ tweet.user.profile.image.url }}"><br><span class="spanforuser"> {{ tweet.user }} <br></span> <br>{{ tweet.tweet_text }}  <br><span> <i class="fa fa-comments indexicons" style="font-size:15px" aria-hidden="true"> {{ tweet.reply_count }}</i><i class="fa fa-retweet indexicons" style="font-size:15px">{{ tweet.retweet_count }}</i>
+                <a href= "{% url 'view_tweet' tweet.tweet_id %}" class="list-group-item list-group-item-action tweetitem"><br>  <img class="rounded-circle  index-image-profile" src="{{ tweet.user.profile.image.url }}"><br><span class="spanforuser"> {{ tweet.user }} <br></span> <br>{{ tweet.tweet_text }}  <br><span> <i class="fa fa-comments indexicons" style="font-size:15px" aria-hidden="true"> {{ tweet.reply_count }}</i><i class="fa fa-retweet indexicons" style="font-size:15px"> {{ tweet.retweet_count }}</i>
 </span></a>
                    {% if tweet.user == request.user %}
                        <a class="btn btn-primary btn-sm deletebutton" href="{% url 'delete_tweet'  tweet.tweet_id %}" role="button"> Delete this tweet</a>
