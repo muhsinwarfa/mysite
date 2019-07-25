@@ -153,9 +153,12 @@ def registration(request):
 def bio(request, username):
     user = User.objects.get(username=username)
     tweets = Tweet.objects.all()
+    followercount= Follower.objects.filter(user_id_2=user.id).count()
+    print(followercount)
     context = {
         'user': user,
-        'tweets': tweets
+        'tweets': tweets,
+        'followercount': followercount
     }
     return render(request,'twitterviews/bio.html',context)
 

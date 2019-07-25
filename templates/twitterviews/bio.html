@@ -39,8 +39,7 @@
             <img class="rounded-circle profile-image" src="{{ user.profile.image.url }}">
             <h5 class="">{{ user.username }}</h5>
             <h5 class="">{{ user.email }}</h5>
-            <h5>Followers:  125 </h5>
-            <h5>Retweets: 1000 </h5>
+            <h5>Followers: {{ followercount }} </h5>
 
             <ul class="list-group listoftweets">
                 {% for  tweet in tweets %}
