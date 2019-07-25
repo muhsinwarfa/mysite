@@ -36,23 +36,21 @@
         <div class="col">
         </div>
         <div class="col-md-6 bio">
+{#        bio information#}
             <img class="rounded-circle profile-image" src="{{ user.profile.image.url }}">
             <h5 class="">{{ user.username }}</h5>
             <h5 class="">{{ user.email }}</h5>
             <h5>Followers: {{ followercount }} </h5>
-
+{#tweets and retweets of the user#}
             <ul class="list-group listoftweets">
                 {% for  tweet in tweets %}
                     {% if tweet.user == user %}
-                          <a  href= "{% url 'view_tweet' tweet.tweet_id %}" class="list-group-item list-group-item-action usertimelinetweets"><br>  <img class="rounded-circle  index-image-profile" src="{{ user.profile.image.url }}"><br><span class="spanforuser"> {{ user }} <br></span> <br>{{ tweet.tweet_text }}  <br><span> <i class="fa fa-comments indexicons" style="font-size:15px" aria-hidden="true"> {{ tweet.reply_count }}</i><i class="fa fa-retweet indexicons" style="font-size:15px"> {{ tweet.retweet_count }}</i>
-</span></a>
+                          <a  href= "{% url 'view_tweet' tweet.tweet_id %}" class="list-group-item list-group-item-action usertimelinetweets"><br>  <img class="rounded-circle  index-image-profile" src="{{ user.profile.image.url }}"><br><span class="spanforuser"> {{ user }} <br></span> <br>{{ tweet.tweet_text }}  <br><span> <i class="fa fa-comments indexicons" style="font-size:15px" aria-hidden="true"> {{ tweet.reply_count }}</i><i class="fa fa-retweet indexicons" style="font-size:15px"> {{ tweet.retweet_count }}</i></span></a>
                     {% endif %}
                 {% endfor %}
             </ul>
         </div>
-        <div class="col">
-
-        </div>
+        <div class="col"></div>
     </div>
 </div>
 </body>

@@ -43,7 +43,6 @@ def create_tweet(request):
             obj.save()
         return redirect('list_tweets')
      form = TweetForm()
-
      return render(request, 'twitterviews/newtweetform.html', {'form': form})
 
 

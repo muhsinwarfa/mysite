@@ -1,5 +1,7 @@
 body{
     background-color: white;
+    font-family: 'Roboto', sans-serif;
+
     /*#1da1f2*/
 }
 
@@ -8,7 +10,7 @@ body{
     width: 600px;
 
     margin-left: 350px;
-    padding: 30px;
+    padding: 20px;
 }
 
 .viewtweet{
@@ -105,19 +107,6 @@ body{
     margin-left: 366px;
 }
 
-#time {
-    background:#ddd;
-    width:30px;
-    height:60px;
-    padding:20px;
-    padding:auto;
-    white-space:nowrap;
-    overflow:hidden;
-    cursor:pointer;
-}
-#time p {
-    margin-left:35px;
-}
 .border{
         border: 1px solid lightgrey;
         padding: 50px;
@@ -127,4 +116,18 @@ body{
 .usertimelinetweets{
     padding: 20px;
     margin-top:20px;
+}
+span{
+    font-weight: bold;
+}
+
+#id_user_id_2{
+    margin-bottom: 20px;
+    padding: 15px;
+    padding:auto;
+    margin-right: 20px;
+
+}
+.newfollow{
+
 }
