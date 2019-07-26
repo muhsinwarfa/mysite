@@ -3,38 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="cbed289e-e3a3-4411-a839-8a1dd0f2ae2c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/.keep" beforeDir="false" afterPath="$PROJECT_DIR$/twitter/static/media/.keep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/default.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/twitter/static/media/default.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_pics/.keep" beforeDir="false" afterPath="$PROJECT_DIR$/twitter/static/media/profile_pics/.keep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_pics/2013-12-31_16.41.32_preview.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/twitter/static/media/profile_pics/2013-12-31_16.41.32_preview.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_pics/2013-12-31_16.41.32_preview_gf85ae1.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/twitter/static/media/profile_pics/2013-12-31_16.41.32_preview_gf85ae1.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_pics/2014-08-11_13.30.25_preview.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/twitter/static/media/profile_pics/2014-08-11_13.30.25_preview.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_pics/2014-08-11_13.30.25_preview_1EQOkTZ.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/twitter/static/media/profile_pics/2014-08-11_13.30.25_preview_1EQOkTZ.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_pics/2014-08-11_13.30.25_preview_8RrFa4R.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/twitter/static/media/profile_pics/2014-08-11_13.30.25_preview_8RrFa4R.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_pics/2014-08-11_13.30.25_preview_hUdlCw1.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/twitter/static/media/profile_pics/2014-08-11_13.30.25_preview_hUdlCw1.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_pics/Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/twitter/static/media/profile_pics/Thumbs.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_pics/hafsa.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/twitter/static/media/profile_pics/hafsa.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_pics/hafsa_46ts1Ry.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/twitter/static/media/profile_pics/hafsa_46ts1Ry.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_pics/hafsa_QZ2AL5h.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/twitter/static/media/profile_pics/hafsa_QZ2AL5h.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_pics/hafsa_yKp5rXf.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/twitter/static/media/profile_pics/hafsa_yKp5rXf.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_pics/heart-37384_960_720.png" beforeDir="false" afterPath="$PROJECT_DIR$/twitter/static/media/profile_pics/heart-37384_960_720.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_pics/old_pic3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/twitter/static/media/profile_pics/old_pic3.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/dateutil/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/dateutil/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/dateutil/easter.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/dateutil/easter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/dateutil/parser.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/dateutil/relativedelta.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/dateutil/relativedelta.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/dateutil/rrule.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/dateutil/rrule.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/dateutil/tz.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/dateutil/tzwin.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/dateutil/tzwin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/dateutil/zoneinfo/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/dateutil/zoneinfo/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/dateutil/zoneinfo/zoneinfo-2010g.tar.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/python_dateutil-1.5.dist-info/INSTALLER" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/python_dateutil-1.5.dist-info/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/python_dateutil-1.5.dist-info/METADATA" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/python_dateutil-1.5.dist-info/RECORD" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/python_dateutil-1.5.dist-info/WHEEL" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/python_dateutil-1.5.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,8 +56,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysite/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="155" column="22" selection-start-line="155" selection-start-column="22" selection-end-line="155" selection-end-column="22" />
+            <state relative-caret-position="180">
+              <caret line="162" column="29" lean-forward="true" selection-start-line="162" selection-start-column="29" selection-end-line="162" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -321,15 +291,16 @@
       <workItem from="1563936892446" duration="53929000" />
       <workItem from="1564136934626" duration="7926000" />
       <workItem from="1564157027636" duration="5403000" />
-      <workItem from="1564163933332" duration="5290000" />
+      <workItem from="1564163933332" duration="6360000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="270603000" />
+    <option name="totallyTimeSpent" value="271673000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23181818" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -597,8 +568,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="155" column="22" selection-start-line="155" selection-start-column="22" selection-end-line="155" selection-end-column="22" />
+        <state relative-caret-position="180">
+          <caret line="162" column="29" lean-forward="true" selection-start-line="162" selection-start-column="29" selection-end-line="162" selection-end-column="29" />
         </state>
       </provider>
     </entry>

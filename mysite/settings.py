@@ -154,3 +154,15 @@ STATIC_URL = 'https://%s/%s/' % (AWS_S3_CUSTOM_DOMAIN, AWS_LOCATION)
 
 STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 AWS_DEFAULT_ACL = None
+
+# AWS_S3_CUSTOM_DOMAIN = AWS_STORAGE_BUCKET_NAME + '.s3.amazonaws.com'
+# #static media settings
+# STATIC_URL = 'https://' + AWS_STORAGE_BUCKET_NAME + '.s3.amazonaws.com/'
+# MEDIA_URL = STATIC_URL + 'media/'
+# STATICFILES_DIRS = ( os.path.join(BASE_DIR, "static"), )
+# STATIC_ROOT = 'staticfiles'
+# ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
+# STATICFILES_FINDERS = (
+# 'django.contrib.staticfiles.finders.FileSystemFinder',
+# 'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+# )
