@@ -12,7 +12,9 @@ body{
     margin-left: 350px;
     padding: 20px;
 }
-
+.borderregister{
+        border: 1px solid lightgrey;
+}
 .viewtweet{
     background-color: white;
     color: black;
