@@ -44,15 +44,13 @@
 
     <form method="post" action="{% url 'login' %}" >
         {%  csrf_token %}
-{#            <p>username: {{ form.username }}</p>#}
-{#            <p>password: {{ form.password }}</p>#}
         {{ form|crispy  }}
         <input class="btn btn-primary mb-2" type="submit" value="login">
         <input type="hidden" name= "next" value="{{ next }}">
     </form>
 
 
-    <p class="text-center"><a href="http://127.0.0.1:8000/register">Create an Account</a></p>
+    <p class="text-center"><a href="{% url 'register' %}">Create an Account</a></p>
 </div>
 
 </div>
