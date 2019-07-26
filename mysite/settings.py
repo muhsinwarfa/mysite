@@ -60,7 +60,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'mysite.urls'
-LOGIN_REDIRECT_URL = ''
+LOGIN_REDIRECT_URL = 'list_tweets'
 
 TEMPLATES = [
     {
@@ -129,7 +129,6 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
 
 
 
