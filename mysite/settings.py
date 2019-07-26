@@ -151,6 +151,8 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'twitter/static'),
 ]
 STATIC_URL = 'https://%s/%s/' % (AWS_S3_CUSTOM_DOMAIN, AWS_LOCATION)
+MEDIA_URL = 'twitter/static'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'twitter/static')
 
 STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 AWS_DEFAULT_ACL = None
