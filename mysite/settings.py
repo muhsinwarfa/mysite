@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'widget_tweaks',
     'crispy_forms',
     'fontawesome',
-
+    'storages',
 ]
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
@@ -131,30 +131,26 @@ USE_L10N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/2.2/howto/static-files/
-PROJECT_ROOT   =   os.path.join(os.path.abspath(__file__))
-STATIC_URL = '/static/'
-STATIC_ROOT  =   os.path.join(PROJECT_ROOT, 'staticfiles')
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-
-# Deployment configs
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/1.11/howto/static-files/
-
-
-# Extra lookup directories for collectstatic to find static files
-STATICFILES_DIRS = (
-    os.path.join(PROJECT_ROOT, '/static'),
-)
-
-#  Add configuration for static files storage using whitenoise
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # update the db
 import dj_database_url
 prod_db  =  dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(prod_db)
+
+AWS_ACCESS_KEY_ID = 'AKIAQQRYVHS4D7CMOOU3'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_STORAGE_BUCKET_NAME = 'django-twitter-files'
+AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
+AWS_S3_OBJECT_PARAMETERS = {
+    'CacheControl': 'max-age=86400',
+}
+AWS_LOCATION = 'static'
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'twitter/static'),
+]
+STATIC_URL = 'https://%s/%s/' % (AWS_S3_CUSTOM_DOMAIN, AWS_LOCATION)
+
+STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+AWS_DEFAULT_ACL = None

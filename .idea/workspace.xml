@@ -2,7 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbed289e-e3a3-4411-a839-8a1dd0f2ae2c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/.keep" beforeDir="false" afterPath="$PROJECT_DIR$/twitter/static/media/.keep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/default.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/twitter/static/media/default.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/profile_pics/.keep" beforeDir="false" afterPath="$PROJECT_DIR$/twitter/static/media/profile_pics/.keep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/profile_pics/2013-12-31_16.41.32_preview.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/twitter/static/media/profile_pics/2013-12-31_16.41.32_preview.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/profile_pics/2013-12-31_16.41.32_preview_gf85ae1.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/twitter/static/media/profile_pics/2013-12-31_16.41.32_preview_gf85ae1.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/profile_pics/2014-08-11_13.30.25_preview.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/twitter/static/media/profile_pics/2014-08-11_13.30.25_preview.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/profile_pics/2014-08-11_13.30.25_preview_1EQOkTZ.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/twitter/static/media/profile_pics/2014-08-11_13.30.25_preview_1EQOkTZ.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/profile_pics/2014-08-11_13.30.25_preview_8RrFa4R.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/twitter/static/media/profile_pics/2014-08-11_13.30.25_preview_8RrFa4R.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/profile_pics/2014-08-11_13.30.25_preview_hUdlCw1.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/twitter/static/media/profile_pics/2014-08-11_13.30.25_preview_hUdlCw1.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/profile_pics/Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/twitter/static/media/profile_pics/Thumbs.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/profile_pics/hafsa.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/twitter/static/media/profile_pics/hafsa.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/profile_pics/hafsa_46ts1Ry.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/twitter/static/media/profile_pics/hafsa_46ts1Ry.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/profile_pics/hafsa_QZ2AL5h.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/twitter/static/media/profile_pics/hafsa_QZ2AL5h.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/profile_pics/hafsa_yKp5rXf.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/twitter/static/media/profile_pics/hafsa_yKp5rXf.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/profile_pics/heart-37384_960_720.png" beforeDir="false" afterPath="$PROJECT_DIR$/twitter/static/media/profile_pics/heart-37384_960_720.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/profile_pics/old_pic3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/twitter/static/media/profile_pics/old_pic3.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/dateutil/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/dateutil/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/dateutil/easter.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/dateutil/easter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/dateutil/parser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/dateutil/relativedelta.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/dateutil/relativedelta.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/dateutil/rrule.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/dateutil/rrule.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/dateutil/tz.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/dateutil/tzwin.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/dateutil/tzwin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/dateutil/zoneinfo/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/dateutil/zoneinfo/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/dateutil/zoneinfo/zoneinfo-2010g.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/python_dateutil-1.5.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/python_dateutil-1.5.dist-info/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/python_dateutil-1.5.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/python_dateutil-1.5.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/python_dateutil-1.5.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/python_dateutil-1.5.dist-info/top_level.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,7 +51,7 @@
         <entry file="file://$PROJECT_DIR$/templates/registration/register.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
-              <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+              <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -27,7 +59,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/registration/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-323">
+            <state>
               <caret selection-end-line="5" selection-end-column="28" />
             </state>
           </provider>
@@ -45,8 +77,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/twitterviews/bio.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="39" column="62" lean-forward="true" selection-start-line="39" selection-start-column="62" selection-end-line="39" selection-end-column="62" />
+            <state relative-caret-position="193">
+              <caret line="55" column="7" selection-start-line="55" selection-start-column="7" selection-end-line="55" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -54,8 +86,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysite/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="136" column="23" lean-forward="true" selection-start-line="136" selection-start-column="23" selection-end-line="136" selection-end-column="23" />
+            <state relative-caret-position="197">
+              <caret line="155" column="22" selection-start-line="155" selection-start-column="22" selection-end-line="155" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -77,8 +109,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/twitter/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="30" column="48" lean-forward="true" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
+            <state relative-caret-position="-51">
+              <caret line="30" column="48" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -89,7 +121,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/twitterviews/newtweetform.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
+            <state relative-caret-position="425">
               <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
             </state>
           </provider>
@@ -99,7 +131,7 @@
         <entry file="file://$PROJECT_DIR$/templates/twitterviews/profile.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" selection-end-column="28" />
+              <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -150,7 +182,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -173,7 +205,12 @@
             <path>
               <item name="mysite" type="b2602c69:ProjectViewProjectNode" />
               <item name="mysite" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mysite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mysite" type="462c0819:PsiDirectoryNode" />
+              <item name="twitter" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -196,15 +233,16 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ramla\PycharmProjects\mysite\media\profile_pics" />
+      <recent name="C:\Users\Ramla\PycharmProjects\mysite\twitter\static\twitter" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ramla\PycharmProjects\mysite\twitter\static" />
       <recent name="C:\Users\Ramla\PycharmProjects\mysite\media" />
       <recent name="C:\Users\Ramla\PycharmProjects\mysite" />
       <recent name="C:\Users\Ramla\PycharmProjects\mysite\templates\twitterviews" />
       <recent name="C:\Users\Ramla\PycharmProjects\mysite\templates" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Ramla\PycharmProjects\mysite\media\profile_pics" />
-      <recent name="C:\Users\Ramla\PycharmProjects\mysite\twitter\static\twitter" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -283,17 +321,17 @@
       <workItem from="1563936892446" duration="53929000" />
       <workItem from="1564136934626" duration="7926000" />
       <workItem from="1564157027636" duration="5403000" />
+      <workItem from="1564163933332" duration="5290000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="265313000" />
+    <option name="totallyTimeSpent" value="270603000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22803031" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23181818" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -430,7 +468,7 @@
     <entry file="file://$PROJECT_DIR$/twitter/static/twitter/.keep">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/media/.keep">
+    <entry file="file://$PROJECT_DIR$/twitter/static/media/.keep">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/twitter/static/twitter/style.css">
@@ -495,17 +533,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/twitterviews/newtweetform.html">
+    <entry file="file://$PROJECT_DIR$/templates/registration/register.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+        <state relative-caret-position="272">
+          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/twitterviews/profile.html">
+    <entry file="file://$PROJECT_DIR$/templates/registration/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" selection-end-column="28" />
+        <state>
+          <caret selection-end-line="5" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -513,37 +551,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/registration/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-323">
-          <caret selection-end-line="5" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/registration/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/twitterviews/bio.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="39" column="62" lean-forward="true" selection-start-line="39" selection-start-column="62" selection-end-line="39" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/twitter/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="30" column="48" lean-forward="true" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -557,10 +564,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/twitterviews/newtweetform.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/twitterviews/profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/twitterviews/bio.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="55" column="7" selection-start-line="55" selection-start-column="7" selection-end-line="55" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twitter/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <caret line="30" column="48" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="136" column="23" lean-forward="true" selection-start-line="136" selection-start-column="23" selection-end-line="136" selection-end-column="23" />
+        <state relative-caret-position="197">
+          <caret line="155" column="22" selection-start-line="155" selection-start-column="22" selection-end-line="155" selection-end-column="22" />
         </state>
       </provider>
     </entry>
