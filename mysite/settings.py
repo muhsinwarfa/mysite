@@ -11,6 +11,9 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
+import django_heroku
+
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -19,13 +22,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'ba0cm)9^$$f^(=sp4%20&gcq-d9m6&uh$=85n*hg!t%0&zvqr9'
+
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = ['meawesometwitterapp.herokuapp.com']
+DEBUG = (os.environ.get('DEBUG_VALUE') == 'True')
 
 
 # Application definition
@@ -49,7 +50,6 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 
 MIDDLEWARE = [
-    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -136,30 +136,22 @@ USE_TZ = True
 import dj_database_url
 prod_db  =  dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(prod_db)
-
-AWS_ACCESS_KEY_ID = 'AKIAQQRYVHS4D7CMOOU3'
-AWS_SECRET_ACCESS_KEY = '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'
-AWS_STORAGE_BUCKET_NAME = 'django-twitter-files'
-AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
-AWS_S3_OBJECT_PARAMETERS = {
-    'CacheControl': 'max-age=86400',
-}
-AWS_LOCATION = 'static'
+# updated
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
+
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+#old
+AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME')
+AWS_LOCATION = 'static'
+
 AWS_S3_FILE_OVERWRITE = False
-STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 AWS_DEFAULT_ACL = None
 
-# AWS_S3_CUSTOM_DOMAIN = AWS_STORAGE_BUCKET_NAME + '.s3.amazonaws.com'
-# #static media settings
-# STATIC_URL = 'https://' + AWS_STORAGE_BUCKET_NAME + '.s3.amazonaws.com/'
-# MEDIA_URL = STATIC_URL + 'media/'
-# STATICFILES_DIRS = ( os.path.join(BASE_DIR, "static"), )
-# STATIC_ROOT = 'staticfiles'
-# ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
-# STATICFILES_FINDERS = (
-# 'django.contrib.staticfiles.finders.FileSystemFinder',
-# 'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-# )
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+
+django_heroku.settings(locals())

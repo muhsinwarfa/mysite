@@ -17,6 +17,3 @@ urlpatterns = [
     path('view/<int:id>/retweet', views.create_retweet, name='create_retweet'),
     path('newusers',views.newusers,name='newusers')
 ]
-
-if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
