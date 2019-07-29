@@ -1,0 +1,135 @@
+body{
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+
+    /*#1da1f2*/
+}
+
+
+.tweetitem{
+    width: 600px;
+
+    margin-left: 350px;
+    padding: 20px;
+}
+.borderregister{
+        border: 1px solid lightgrey;
+}
+.viewtweet{
+    background-color: white;
+    color: black;
+    padding: 40px;
+    padding: auto;
+    border: 1px solid lightgrey;
+
+}
+.replyicon{
+    margin-left: 100px;
+}
+.reply{
+    margin-top:20px;
+}
+.deletebutton{
+    width: 600px;
+    margin-left: 350px;
+    background-color: #f7f7f7;
+    color:black;
+    border: 1px solid lightgrey;
+
+}
+.deletebutton:hover{
+    background-color:red;
+    border: 1px solid red;
+
+}
+.orginaltweetlink{
+    color:  #1da1f2;
+}
+.newtweeet{
+    margin-top: 100px;
+    margin:auto;
+    width: 300px;
+    padding:50px;
+    padding: auto;
+    background-color: white;
+    border: 1px solid lightgrey;
+}
+.menu-bar{
+    background: white;
+    width: 600px;
+    margin: auto;
+    color: #1da1f2;
+
+
+}
+
+.profile-image{
+    width: 100px;
+    height: 100px;
+}
+
+.index-image-profile{
+    width: 50px;
+    height: 50px;
+}
+.spanforuser{
+
+}
+.profile-link{
+    margin-left: 350px;
+    margin-bottom: 50px;
+    border: 1px solid lightgrey;
+
+}
+.login-customized{
+    width:300px;
+    margin-top: 40px;
+    margin-left: 400px;
+}
+
+.indexicons{
+    margin-left: 20px;
+    margin-top: 10px;
+    color: black;
+}
+.regitration-form{
+        border: 1px solid lightgrey;
+
+}
+
+.bio{
+    background-color: white;
+    border: 2px solid lightgrey;
+    border-radius: 1px;
+    padding: 20px;
+    padding: auto;
+}
+.search{
+    width: 600px;
+    margin-left: 366px;
+}
+
+.border{
+        border: 1px solid lightgrey;
+        padding: 50px;
+
+}
+
+.usertimelinetweets{
+    padding: 20px;
+    margin-top:20px;
+}
+span{
+    font-weight: bold;
+}
+
+#id_user_id_2{
+    margin-bottom: 20px;
+    padding: 15px;
+    padding:auto;
+    margin-right: 20px;
+
+}
+.newfollow{
+
+}

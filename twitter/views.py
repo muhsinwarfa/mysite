@@ -26,6 +26,8 @@ def list_tweets(request):
     # now list of users has all the ids the currently logged in user plus the id of the current user
     listofusers.append(request.user.id)
     tweets = Tweet.objects.filter(user__in=listofusers)
+    for tweet in tweets:
+        print(tweet.user.profile.image.url)
     context={
         'tweets': tweets
     }
