@@ -1,5 +1,7 @@
 #Simpletwitter
 
+Link: https://meawesometwitterapp.herokuapp.com/
+
 This project's aim is to create twitter from scratch using django 
 
 There are only three tables that the database will have User,tweet,follower.
